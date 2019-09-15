@@ -1,0 +1,41 @@
+
+
+.input-field {
+    width: 100%;
+    text-align: left;
+    &:last-child {
+        margin-bottom: 20px;
+    }
+    .select-field {
+        width: 100%;
+        margin-top: 16px;
+        text-align: left;
+    }
+}
+
+.form-container {
+    width: 30%;
+    min-width: 280px;
+    margin: 0 auto;
+    .btn {
+        background-color: #4d75ec;
+        color: #fff;
+        &:hover {
+            background-color: darken(#4d75ec, 5%);
+        }
+    }
+}
+
+.error {
+    color: red;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.checkbox-field {
+    width: 100%;
+    margin: 8px 0;
+    text-align: left;
+}
