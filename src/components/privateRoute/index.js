@@ -6,13 +6,12 @@ const PrivateRoute = ({ component: Component, auth,  ...rest}) => {
     return (
         <Route
             {...rest}
-            render={() => {
+            render={(props) => {
                 if(!auth.uid) {
-                    return <Redirect to='/signIn'/>
+                    return <Redirect to='/signIn' />
                 } else {
-                    return <Component />
+                    return <Component {...props} />
                 }
-                
             }}
         />
     );

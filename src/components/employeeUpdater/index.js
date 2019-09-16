@@ -8,6 +8,7 @@ const EmployeeUpdater = function(props) {
 }
 
 const mapStateToProps = (state, ownProps) => {
+    console.log(ownProps);
     const id = ownProps.match.params.id;
     return {
         employeeId: id,
